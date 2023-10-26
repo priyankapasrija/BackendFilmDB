@@ -3,7 +3,7 @@ const dbPool = require("../db/pgClient");
 const getAllFilms = async (req, res) => {
   try {
     const { rows } = await dbPool.query(
-      `SELECT movie_id, title, description, director, rating, release_year, img_src, trailer_url, genre FROM films;`
+      `SELECT movie_id, filmname, description, director, rating, year, imagesrc, trailer_url, genre FROM films;`
     );
 
     return res.json(rows);
@@ -22,7 +22,7 @@ const getSingleFilm = async (req, res) => {
     const {
       rows: [oneFilm],
     } = await dbPool.query(
-      `SELECT movie_id, title, description, director, rating, release_year, img_src, trailer_url, genre FROM films WHERE movie_id=$1`,
+      `SELECT  movie_id, filmname, description, director, rating, year, imagesrc, trailer_url, genre FROM films WHERE movie_id=$1`,
       [id]
     );
 
