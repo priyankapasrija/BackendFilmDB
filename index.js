@@ -8,7 +8,7 @@ const cors = require("cors");
 
 const port = process.env.PORT || 7000;
 
-<
+
 // const corsOptions = {
 //     origin: 'http://localhost:7000', //  frontend local
 //     optionsSuccessStatus: 200
@@ -20,7 +20,7 @@ const port = process.env.PORT || 7000;
 
 // to see in terminal all the credentials added in env file
 app.use(cors());
-=======
+
 // const corsOptions = {
 //     origin: 'http://localhost:7000', //  frontend local
 //     optionsSuccessStatus: 200 
