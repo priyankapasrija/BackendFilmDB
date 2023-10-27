@@ -13,11 +13,12 @@ const port = process.env.PORT || 7000;
 //     optionsSuccessStatus: 200
 // };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // console.log(process.env);
 
 // to see in terminal all the credentials added in env file
+app.use(cors());
 
 app.get("/", (req, res) => res.send("Welcome to the films API"));
 
