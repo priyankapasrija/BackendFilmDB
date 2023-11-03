@@ -18,6 +18,7 @@ const port = process.env.PORT || 7000;
 
 // console.log(process.env);
 
+
 // to see in terminal all the credentials added in env file
 app.use(cors());
 
